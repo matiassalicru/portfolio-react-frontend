@@ -30,10 +30,11 @@ html{
 }
 
 .arrow{
+    margin:auto;
     width: 40px;
     height: 40px;
-    top: 92vh;
-    margin: -20px 0 0 -20px;
+    margin-top: 85vh;
+    transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     border-left: none;
     border-top: none;
@@ -48,7 +49,6 @@ html{
     width: 20px;
     height: 20px;
     top: 50%;
-    margin: -10px 0 0 -10px;
     border-left: none;
     border-top: none;
     border-right: 1px #fff solid;

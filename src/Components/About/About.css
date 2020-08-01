@@ -1,0 +1,61 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    height: 100vh;
+    color: #f4f4f480;
+}
+
+.about h1{
+    margin-bottom: 4rem;
+}
+
+.about-me{
+    width: 60vw;
+    line-height: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgb(58, 58, 58);
+    box-shadow: 2px 2px 5px 5px #22222250;
+    padding: 1rem;
+}
+
+.about-me-extra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
+
+.about-me-extra p{
+    font-size: 1.5rem;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 2rem;
+    /* background-color: #fff; */
+}
+
+.skill{
+    padding: 1rem 2rem;
+    margin: 0 2rem; 
+    border-radius: 1rem;
+    background-color: rgb(58, 58, 58);
+    transition-duration: 0.3s;
+
+}
+
+  .skill:hover, .skill:focus, .skill:active {
+    box-shadow: 5px 10px 10px -10px rgba(179, 179, 179, 1);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  

@@ -6,12 +6,17 @@ import Header from './Components/Header/Header';
 
 import './App.css';
 
+function goto(n) {
+  const height = window.innerHeight * n;
+  window.scrollTo(0, height) // Hace un scroll de la altura del viewport de quien lo está viendo.
+}
+
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <About/>
-      <Portfolio/>
+      <Header scroll={goto(1)}/>
+      <About scroll={goto(2)}/>
+      <Portfolio scroll={goto(3)}/>
     </div>
   );
 }

@@ -11,7 +11,7 @@ function Header () {
 
     return (
       <div className="header-container">
-        <Nav/>
+        <Nav scroll={goto}/>
         <h1 className="header-title">&lt;Matias/&gt; </h1>
         <div onClick={goto} className="arrow"></div>
       </div>
