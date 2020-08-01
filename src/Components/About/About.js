@@ -12,6 +12,7 @@ function About() {
     
     return (
       <div className="about">
+
         {information.skills && information.skills.map((skill, index) => (
             <p className="skill">{skill}</p>
           ))}
