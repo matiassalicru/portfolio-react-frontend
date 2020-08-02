@@ -4,26 +4,125 @@ import "./Portfolio.css";
 
 function Portfolio(){
     const [projects, setProjects] = useState({});
+
     useEffect(() => {
         axios.get("https://portfolio-react-backend.herokuapp.com/portfolio")
             .then(
                 res => setProjects(res.data)
-            )}, [setProjects]);
+                )
+            }, [setProjects]);
+                
+            //selectors
+            // const modal = document.querySelector('.modal');
+            // console.log(modal)
+
+
+
+
+            function expand (index) {
+                const modal = document.getElementById("modal");
+                const image = document.getElementById('image');
+                const description = document.getElementById("description");
+
+                
+                switch (index) {
+                  case 0:
+                    modal.classList.add("open");
+                    image.src = projects[index].image;
+                    description.innerText = projects[index].description;
+                    break;
+                  case 1:
+                    modal.classList.add("open");
+                    image.src = projects[index].image;
+                    description.innerText = projects[index].description;
+                    break;
+                  case 2:
+                    modal.classList.add("open");
+                    image.src = projects[index].image;
+                    description.innerText = projects[index].description;
+                    break;
+                  case 3:
+                    modal.classList.add("open");
+                    image.src = projects[index].image;
+                    description.innerText = projects[index].description;
+                    break;
+                  case 4:
+                    modal.classList.add("open");
+                    image.src = projects[index].image;
+                    description.innerText = projects[index].description;
+                    break;
+                  case 5:
+                    modal.classList.add("open");
+                    image.src = projects[index].image;
+                    description.innerText = projects[index].description;
+                    break;
+                  default:
+                    break;
+                }
+
+                 
+            }
+
+            function handleClick(){
+                
+                  const modal = document.getElementById("modal");
+
+                  if (modal.classList.contains("open")) {
+                    modal.classList.remove("open");
+                  }
+                
+            }
+
             
+
     return (
-        <>
-            <div className='projects-container'>
-                {projects.length > 0 && projects.map((project, index) => (
-                    <div className='individual-card'>
-                        <div className='project-name'>{project.name}</div>
-                        <img alt='project' className='project-image' src={project.image}></img>
-                        <p className='project-description'>{project.description}</p>
-                        <p className='project-deploy'>Deploy en: {project.deploy}</p>
-                        <a target='_blank' rel="noopener noreferrer" className='project-link' href={project.link}>Visitar este proyecto</a>
-                    </div>//insertar aquí la estructura de la card de los projectos
-                ))}
-            </div>
-        </>
+      <>
+        <div className="projects-container">
+          <h1>Proyectos</h1>
+          <div className="individual-cards-container">
+            {projects.length > 0 &&
+              projects.map((project, index) => (
+                <div
+                  className="individual-card"
+                  key={index}
+                  data-card={index}
+                  onClick={() => expand(index)}
+                >
+                  <div className="project-name">{project.name}</div>
+                  <div className="img-container">
+                    <img
+                      alt="project"
+                      className="project-image"
+                      src={project.image}
+                    ></img>
+                  </div>
+
+                  <p className="inside-text">
+                    Click me to expand and see description
+                  </p>
+
+                  <p className="project-deploy">Deploy en: {project.deploy}</p>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                    href={project.link}
+                  >
+                    Visitar este proyecto
+                  </a>
+                </div>
+              ))}
+          </div>
+          <div className="modal" id="modal" onClick={handleClick}>
+            <img id="image" src="" alt="" className="full-card" />
+            <p className="modal-description" id="description"></p>
+          </div>
+        <div
+          onClick={() => window.scrollTo(0, window.innerHeight * 3)}
+          className="portfolio-arrow"
+        ></div>
+        </div>
+      </>
     );
 }
 

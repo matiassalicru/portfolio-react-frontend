@@ -1,14 +1,28 @@
 import React from 'react';
 import './Nav.css';
 
-function Nav({scroll}) {
-  console.log(scroll)
+function Nav() {
     return (
       <div className="nav-container">
         <ul className="nav-list">
-          <li className='list-item' onClick={scroll}>About</li>
-          <li className='list-item'>Projects</li>
-          <li className='list-item'>Contact</li>
+          <li
+            className="list-item"
+            onClick={() => window.scrollTo(0, window.innerHeight)}
+          >
+            About
+          </li>
+          <li
+            className="list-item"
+            onClick={() => window.scrollTo(0, window.innerHeight * 2)}
+          >
+            Projects
+          </li>
+          <li
+            className="list-item"
+            onClick={() => window.scrollTo(0, window.innerHeight * 3)}
+          >
+            Contact
+          </li>
         </ul>
       </div>
     );

@@ -10,9 +10,9 @@ function Contact () {
                 res => setContact(res.data[0])
             )}, [setContact])
     return(
-        <>
+        <div className='contact-container'>
             {contact.what_talk}
-        </>
+        </div>
     );
 };
 

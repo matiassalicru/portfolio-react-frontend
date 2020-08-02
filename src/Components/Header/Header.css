@@ -6,7 +6,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     height: 100vh;
     color: #CCC;
     background-color: #222;
@@ -14,9 +14,12 @@ html{
 
 .header-title{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
     margin: auto;
+    position: absolute;
+    top: 40%;
     font-size: 8rem;
     -webkit-text-stroke: .5px #fff;
     color: transparent;
@@ -26,14 +29,13 @@ html{
 .arrow,
 .arrow:before{
     position: absolute;
-    left: 50%
 }
 
 .arrow{
     margin:auto;
     width: 40px;
     height: 40px;
-    margin-top: 85vh;
+    margin-top: 90vh;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     border-left: none;
