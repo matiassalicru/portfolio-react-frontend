@@ -11,13 +11,6 @@ function Portfolio(){
                 res => setProjects(res.data)
                 )
             }, [setProjects]);
-                
-            //selectors
-            // const modal = document.querySelector('.modal');
-            // console.log(modal)
-
-
-
 
             function expand (index) {
                 const modal = document.getElementById("modal");
@@ -76,9 +69,9 @@ function Portfolio(){
             
 
     return (
-      <>
         <div className="projects-container">
           <h1>Proyectos</h1>
+          <small>Click on a project to expand</small>
           <div className="individual-cards-container">
             {projects.length > 0 &&
               projects.map((project, index) => (
@@ -91,38 +84,30 @@ function Portfolio(){
                   <div className="project-name">{project.name}</div>
                   <div className="img-container">
                     <img
-                      alt="project"
                       className="project-image"
+                      alt="project"
                       src={project.image}
                     ></img>
                   </div>
 
-                  <p className="inside-text">
-                    Click me to expand and see description
-                  </p>
-
                   <p className="project-deploy">Deploy en: {project.deploy}</p>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-link"
-                    href={project.link}
-                  >
-                    Visitar este proyecto
-                  </a>
-                </div>
+
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      href={project.link}
+                    >
+                      Visitar este proyecto
+                    </a>
+                  </div>
               ))}
           </div>
           <div className="modal" id="modal" onClick={handleClick}>
             <img id="image" src="" alt="" className="full-card" />
             <p className="modal-description" id="description"></p>
           </div>
-        <div
-          onClick={() => window.scrollTo(0, window.innerHeight * 3)}
-          className="portfolio-arrow"
-        ></div>
         </div>
-      </>
     );
 }
 
