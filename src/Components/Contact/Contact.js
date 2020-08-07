@@ -14,7 +14,7 @@ function Contact () {
     return (
       <div className="contact-container">
         <div className="contact-header">
-          <p>I turn coffee into code</p>
+          <p>Turning coffee into code</p>
         </div>
         <p className="creative-process">{contact.creative_process}</p>
         <div className='contact-final'>
@@ -22,6 +22,7 @@ function Contact () {
             <p>{contact.what_talk}</p>
             <h3><a href='mailto:mattiassalicru@gmail.com'>{contact.email}</a></h3>
         </div>
+        <div className='arrow-top' onClick={() => window.scrollTo(0,0)}>To top</div>
       </div>
     );
 };

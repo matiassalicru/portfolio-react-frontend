@@ -2,10 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-list{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -13,4 +15,10 @@
     padding:1rem 2rem 0rem 2rem;
     font-size: 2rem;
     cursor: pointer;
+}
+
+@media (max-width: 700px){
+    .nav-list{
+        display: none;
+    }
 }

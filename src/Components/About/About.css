@@ -5,9 +5,8 @@
     justify-content: center;
     background-color: #222;
     height: 100vh;
-    color: #f4f4f480;
-    box-sizing: border-box;
-    object-fit: cover;
+    color: #ffffffd7;
+    margin-top: 5rem;
 }
 
 .about h1{
@@ -23,6 +22,8 @@
     background-color: rgb(58, 58, 58);
     box-shadow: 2px 2px 5px 5px #22222250;
     padding: 1rem;
+    font-size: 1.05rem;
+    letter-spacing: 1.5px;
 }
 
 .about-me span{
@@ -40,6 +41,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 3rem;
+    font-size: 1.2rem;
 }
 
 .about-me-extra p{
@@ -54,7 +56,6 @@
     flex-wrap: wrap;
     list-style: none;
     padding: 1rem;
-    /* background-color: #fff; */
 }
 
 .skill{
@@ -71,50 +72,35 @@
     transform: scale(1.2);
   }
 
-  
-.about-arrow,
-.about-arrow:before{
-    position: absolute;
-}
-
-.about-arrow{
-    margin:auto;
-    width: 40px;
-    height: 40px;
-    margin-top: 42.5vh;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    border-left: none;
-    border-top: none;
-    border-right: 2px #fff solid;
-    border-bottom: 2px #fff solid;
-    cursor: pointer;
-}
-
-  
-.about-arrow:before{
-    content: '';
-    width: 20px;
-    height: 20px;
-    top: 50%;
-    border-left: none;
-    border-top: none;
-    border-right: 1px #fff solid;
-    border-bottom: 1px #fff solid;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: about-arrow;
-}
-  
-@keyframes about-arrow{
-    0%{
-        opacity: 1;
+  @media (max-width: 700px){
+    .about{
+        height: auto;
     }
-    100%{
-        opacity: 0;
-        transform: translate(-10px, -10px);
-    }
-}
 
-  
-  
+    .about>h1{
+        font-size: 1.5rem;
+    }
+
+    .about-me{
+        font-size: 0.9rem;
+        letter-spacing: unset;
+        width: 80vw;
+    }
+
+    .about-me-extra p{
+        font-size: 1rem;
+    }
+
+    .about-me-extra ul{
+        margin: 1rem 0;
+    }
+
+    .skill{
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    .about{
+        display:none;
+    }
+  }

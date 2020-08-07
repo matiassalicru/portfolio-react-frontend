@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     color: #f4f4f480;
+    margin-top: 5rem;
+
 }
 
 .projects-container h1{
@@ -19,7 +22,6 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
-    width: 100vw;
 }
 
 .individual-card{
@@ -109,7 +111,6 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.45s ease-in-out;
-    z-index: 999;
 }
 
 .open{
@@ -135,50 +136,27 @@
     border-radius: 15px;
 }
 
- 
-.portfolio-arrow,
-.portfolio-arrow:before{
-    position: absolute;
-}
-
-.portfolio-arrow{
-    margin:auto;
-    width: 40px;
-    height: 40px;
-    margin-top: 44.5vh;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    border-left: none;
-    border-top: none;
-    border-right: 2px #fff solid;
-    border-bottom: 2px #fff solid;
-    cursor: pointer;
-}
-
-  
-.portfolio-arrow:before{
-    content: '';
-    width: 20px;
-    height: 20px;
-    top: 50%;
-    border-left: none;
-    border-top: none;
-    border-right: 1px #fff solid;
-    border-bottom: 1px #fff solid;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: portfolio-arrow;
-}
-  
-@keyframes portfolio-arrow{
-    0%{
-        opacity: 1;
+@media (max-width: 700px) {
+    .individual-cards-container{
+        margin: 0;
     }
-    100%{
-        opacity: 0;
-        transform: translate(-10px, -10px);
+
+    .individual-card{
+        max-width: 60%;
+    }
+
+    .modal-description{
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .full-card{
+        margin-top: 50%;
+        width: 100%;
+        height: auto;
+    }
+
+    .projects-container h1{
+        font-size: 2rem;
     }
 }
-
-  
-  

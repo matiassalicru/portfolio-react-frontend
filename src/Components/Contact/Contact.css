@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+
 .contact-container{
     display: flex;
     flex-direction: column;
@@ -20,19 +22,31 @@
 
 .creative-process{
     font-size: 24px;
-    font-style: italic;
     width: 80vw;
     letter-spacing: 0.1rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.contact-final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7B7B7B35;
+    width: 100%;
 }
 
 .contact-final>h2{
+    color: #f4f4f4;
     font-size: 2.5rem;
-    text-decoration: underline;
     font-style: italic;
 }
 
 .contact-final>p{
     font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
     width: 70vw;
 }
 
@@ -40,6 +54,58 @@
     font-size: 2rem;
     text-decoration: none;
     color: inherit;
+    transition: all 0.3s;
+}
+
+.contact-final>h3>a:hover{
+    color: #000;
 }
 
 
+.arrow-top {
+  border: solid #f4f4f4;
+  border-width: 3px 0px 0px 3px;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  animation-name: animateArrow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+@media(max-width: 700px){
+    .contact-container{
+        margin-top: 50px;
+        height: auto;
+    }
+
+    .contact-header>p{
+        font-size: 1.4rem;
+    }
+
+    .creative-process{
+        font-size: 1.2rem;
+        margin: 50px 0;
+    }
+
+    .contact-final{
+        margin: 30px 0;
+    }
+
+    .contact-final>p{
+        width: 80%;
+    }
+
+    .arrow-top{
+        margin: 50px;
+    }
+
+    .contact-final>h3>a{
+        font-size: 1.3rem;
+    }
+}

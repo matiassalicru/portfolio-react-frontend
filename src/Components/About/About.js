@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import "./About.css";
 
-function About({scroll}) {
+function About() {
     
   const [information, setInformation] = useState({}); //Con esto hacemos la llamada de los archivos de la API
   
@@ -12,8 +12,11 @@ function About({scroll}) {
               res => setInformation(res.data[0])
           )}, [setInformation]);
 
+  function goto () {
+    return window.scrollTo(0, window.innerHeight * 2);
+  }
+
     return (
-      <>
         <div className="about">
           <h1>Introducción de mi mismo</h1>
 
@@ -54,11 +57,10 @@ function About({scroll}) {
           </div>
 
           <div
-            onClick={() => window.scrollTo(0, window.innerHeight * 2)}
-            className="about-arrow"
+            onClick={goto}
+            className="arrow about"
           ></div>
         </div>
-      </>
     );
 };
 
