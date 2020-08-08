@@ -14,9 +14,9 @@ function Header () {
           <Nav scroll={goto} />
           <h1 className="header-title"> &lt;Matias/&gt; </h1>
           <ul className='social'>
-              <li className=''><a href='#' className='icon-social-instagram'></a></li>
-              <li className='icon-social-twitter'></li>
-              <li className='icon-social-github'></li>
+              <li><a href='https://www.instagram.com/matiassalicru/' className='icon-social-instagram'></a></li>
+              <li><a href='https://www.twitter.com/matiassalicru' className='icon-social-twitter'></a></li>
+              <li><a href='https://www.github.com/matiassalicru' className='icon-social-github'></a></li>
           </ul>
            <i className="arrow down" onClick={goto}></i>
         </div>

@@ -9,6 +9,7 @@ html{
     justify-content: space-between;
     height: 95vh;
     color: #CCC;
+    width: 100%;
 }
 
 .header-title{
@@ -36,11 +37,16 @@ html{
 
 .social{
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     list-style: none;
+    width: 20vw;
+    margin: 0px 30px 0px 0px;
 }
 
-.social>li{
-    margin: 0 20px;
+.social>li>a{
+    color: #f4f4f4;
+    text-decoration: none;
 }
 
 @keyframes animateArrow{
