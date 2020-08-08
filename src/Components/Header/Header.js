@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './Nav';
 import './Header.css';
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import socialGithub from "@iconify/icons-simple-line-icons/social-github";
 import socialLinkedin from "@iconify/icons-simple-line-icons/social-linkedin";
 import socialTwitter from "@iconify/icons-simple-line-icons/social-twitter";
