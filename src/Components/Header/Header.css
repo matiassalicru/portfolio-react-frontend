@@ -34,6 +34,15 @@ html{
   animation-iteration-count: infinite;
 }
 
+.social{
+    display: flex;
+    list-style: none;
+}
+
+.social>li{
+    margin: 0 20px;
+}
+
 @keyframes animateArrow{
     0%{
         opacity: 1;
