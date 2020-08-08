@@ -24,27 +24,27 @@ function Header () {
             <a
               href="https://www.github.com/matiassalicru"
               target="_blank"
-              rel="noopenner"
+              rel="noopener noreferrer"
             >
-              <Icon icon={socialGithub} className='icon' />
+              <Icon icon={socialGithub} className="icon" />
             </a>
           </li>
           <li>
             <a
               href="https://www.twitter.com/matiassalicru"
               target="_blank"
-              rel="noopenner"
+              rel="noopener noreferrer"
             >
-              <Icon icon={socialTwitter} className='icon'/>
+              <Icon icon={socialTwitter} className="icon" />
             </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/matias-salicru/"
               target="_blank"
-              rel="noopenner"
+              rel="noopener noreferrer"
             >
-              <Icon icon={socialLinkedin} className='icon' />
+              <Icon icon={socialLinkedin} className="icon" />
             </a>
           </li>
         </ul>
