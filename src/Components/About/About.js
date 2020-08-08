@@ -24,7 +24,7 @@ function About() {
             Hola! Mi nombre es <span>Matias </span> tengo 23 años y soy un
             apasionado por la tecnología, aún estoy aprendiendo y recorriendo
             este camino que tanto me llama la atención, llevo varios meses
-            aprendiendo a programar <span>(unos 5 aprox)</span> en ese tiempo
+            aprendiendo a programar <span>(unos 5 aprox, desde febrero 2020)</span> en ese tiempo
             hice algunos proyectos personales que me fueron divertidos de crear,
             en ellos llegué a utilizar tecnologías como HTML5, CSS3, JavaScript,
             ReactJS y Node, siempre es bien recibido el feedback y cualquier
@@ -58,7 +58,7 @@ function About() {
 
           <div
             onClick={goto}
-            className="arrow about"
+            className="arrow"
           ></div>
         </div>
     );
