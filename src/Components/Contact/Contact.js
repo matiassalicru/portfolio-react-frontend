@@ -13,16 +13,26 @@ function Contact () {
             
     return (
       <div className="contact-container">
-        <div className="contact-header">
-          <p>Turning coffee into code</p>
-        </div>
+          <a
+            href="https://cafecito.app/mattdev"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div className="contact-header">
+              <p>Convirtiendo cafecitos en código</p>
+            </div>
+          </a>
         <p className="creative-process">{contact.creative_process}</p>
-        <div className='contact-final'>
-            <h2>Hablemos!</h2>
-            <p>{contact.what_talk}</p>
-            <h3><a href='mailto:mattiassalicru@gmail.com'>{contact.email}</a></h3>
+        <div className="contact-final">
+          <h2>Hablemos!</h2>
+          <p>{contact.what_talk}</p>
+          <h3>
+            <a href="mailto:mattiassalicru@gmail.com">{contact.email}</a>
+          </h3>
         </div>
-        <div className='arrow-top' onClick={() => window.scrollTo(0,0)}>To top</div>
+        <div className="arrow-top" onClick={() => window.scrollTo(0, 0)}>
+          To top
+        </div>
       </div>
     );
 };

@@ -10,14 +10,19 @@
 }
 
 .contact-header{
-    padding: 0 30px;
+    padding: 5px 30px;
     border: none;
     border-radius: 50px;
     background-color: #7B7B7B35;
+    text-decoration: none;
+    color: #f4f4f490;
+    transition: all 0.3s ease-in-out;
+    font-size: 24px;
 }
 
-.contact-header>p{
-    font-size: 24px;
+.contact-header:hover{
+    color: #b479b9;
+    background-color: #333333;
 }
 
 .creative-process{
