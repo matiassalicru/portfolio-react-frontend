@@ -95,7 +95,7 @@ function Portfolio(){
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-link"
+                      className="btn"
                       href={project.link}
                     >
                       Visitar este proyecto

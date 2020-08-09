@@ -19,7 +19,7 @@ function Contact () {
             target="_blank"
           >
             <div className="contact-header">
-              <p>Convirtiendo cafecitos en código</p>
+              <p className='btn'>Convirtiendo cafecitos en código</p>
             </div>
           </a>
         <p className="creative-process">{contact.creative_process}</p>

@@ -42,7 +42,7 @@ function About() {
             <ul className="skills">
               {information.skills &&
                 information.skills.map((skill, index) => (
-                  <li key={index} className="skill hvr-grow-shadow">
+                  <li key={index} className="skill btn">
                     {skill}
                   </li>
                 ))}

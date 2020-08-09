@@ -81,16 +81,7 @@
     color: #b479b9;
 }
 
-.project-link{
-    font-family: 'Quicksand', sans-serif;
-    text-decoration: none;
-    border: 1px solid;
-    border-radius: 40px;
-    padding: 10px;
-    background-color: none;
-    transition: all 0.2s;
-    color: rgba(255, 255, 255, 0.829);
-}
+
 
 .project-link:hover{
     color: #b479b9;
