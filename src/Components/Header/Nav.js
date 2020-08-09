@@ -9,7 +9,7 @@ function Nav() {
             className="list-item"
             onClick={() => window.scrollTo(0, window.innerHeight)}
           >
-            About
+            About Me
           </li>
           <li
             className="list-item"
@@ -19,7 +19,7 @@ function Nav() {
           </li>
           <li
             className="list-item"
-            onClick={() => window.scrollTo(0, window.innerHeight * 3)}
+            onClick={() => window.scrollTo(0, window.innerHeight * 3.5)}
           >
             Contact
           </li>

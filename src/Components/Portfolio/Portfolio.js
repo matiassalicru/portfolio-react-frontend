@@ -71,7 +71,7 @@ function Portfolio(){
     return (
         <div className="projects-container">
           <h1>Proyectos</h1>
-          <small>Click on a project to expand</small>
+          <small>Click en un proyecto para expandir</small>
           <div className="individual-cards-container">
             {projects.length > 0 &&
               projects.map((project, index) => (

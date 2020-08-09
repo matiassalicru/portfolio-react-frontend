@@ -18,7 +18,7 @@ function About() {
 
     return (
         <div className="about">
-          <h1>Introducción de mi mismo</h1>
+          <h1>¿Quién soy?</h1>
 
           <div className="about-me">
             Hola! Mi nombre es <span>Matias </span> tengo 23 años y soy un
