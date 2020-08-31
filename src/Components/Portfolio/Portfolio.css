@@ -103,6 +103,12 @@
     pointer-events: none;
     transition: all 0.45s ease-in-out;
 }
+.project-modal-description{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+}
 
 .open{
     opacity: 1;
@@ -114,7 +120,7 @@
     color: rgb(99, 99, 99);
     width: 50vw;
     padding: 1.5rem;
-    margin: auto;
+    margin: auto 2rem;
     margin-bottom: 5rem;
     background-color: #f4f4f4;
     border-radius: 10px;

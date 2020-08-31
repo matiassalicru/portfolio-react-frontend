@@ -65,49 +65,49 @@ function Portfolio(){
                   }
                 
             }
-
             
-
     return (
-        <div className="projects-container">
-          <h1>Proyectos</h1>
-          <small>Click en un proyecto para expandir</small>
-          <div className="individual-cards-container">
-            {projects.length > 0 &&
-              projects.map((project, index) => (
-                <div
-                  className="individual-card"
-                  key={index}
-                  data-card={index}
-                  onClick={() => expand(index)}
+      <div className="projects-container">
+        <h1>Proyectos</h1>
+        <small>Click en un proyecto para expandir</small>
+        <div className="individual-cards-container">
+          {projects.length > 0 &&
+            projects.map((project, index) => (
+              <div
+                className="individual-card"
+                key={index}
+                data-card={index}
+                onClick={() => expand(index)}
+              >
+                <div className="project-name">{project.name}</div>
+                <div className="img-container">
+                  <img
+                    className="project-image"
+                    alt="project"
+                    src={project.image}
+                  ></img>
+                </div>
+
+                <p className="project-deploy">Deploy en: {project.deploy}</p>
+
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                  href={project.link}
                 >
-                  <div className="project-name">{project.name}</div>
-                  <div className="img-container">
-                    <img
-                      className="project-image"
-                      alt="project"
-                      src={project.image}
-                    ></img>
-                  </div>
-
-                  <p className="project-deploy">Deploy en: {project.deploy}</p>
-
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn"
-                      href={project.link}
-                    >
-                      Visitar este proyecto
-                    </a>
-                  </div>
-              ))}
-          </div>
-          <div className="modal" id="modal" onClick={handleClick}>
-            <img id="image" src="" alt="" className="full-card" />
+                  Visitar este proyecto
+                </a>
+              </div>
+            ))}
+        </div>
+        <div className="modal" id="modal" onClick={handleClick}>
+          <img id="image" src="" alt="" className="full-card" />
+          <div className="project-modal-description">
             <p className="modal-description" id="description"></p>
           </div>
         </div>
+      </div>
     );
 }
 

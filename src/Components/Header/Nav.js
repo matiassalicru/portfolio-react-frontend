@@ -13,7 +13,7 @@ function Nav() {
           </li>
           <li
             className="list-item"
-            onClick={() => window.scrollTo(0, window.innerHeight * 2)}
+            onClick={() => window.scrollTo(0, window.innerHeight * 2.5)}
           >
             Projects
           </li>
