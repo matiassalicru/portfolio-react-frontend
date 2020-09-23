@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio personal con proyectos y un poco sobre mi
+
 
 ## Available Scripts
 
