@@ -12,7 +12,11 @@ function Portfolio() {
     axios
       .get("https://portfolio-react-backend.herokuapp.com/portfolio")
       .then((res) => setProjects(res.data))
-      .then(setLoading(false));
+      .then(
+        setTimeout(() => {
+          setLoading(false)
+        }, 2000)
+      );
   }, [setProjects]);
 
   function expand(index) {
@@ -79,7 +83,7 @@ function Portfolio() {
       <small>Click en un proyecto para expandir</small>
       {loading ? (
         <div>
-          <Lottie options={defaultOptions} width="200px" />
+          <Lottie options={defaultOptions} width="250px" />
         </div>
       ) : (
         <div className="individual-cards-container">
