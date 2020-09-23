@@ -1,75 +1,87 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 import "./Portfolio.css";
+import loadingImg from "../../Data/27804-loading-triangle.json";
+import Lottie from "react-lottie";
 
-function Portfolio(){
-    const [projects, setProjects] = useState({});
+function Portfolio() {
+  const [projects, setProjects] = useState({});
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        axios.get("https://portfolio-react-backend.herokuapp.com/portfolio")
-            .then(
-                res => setProjects(res.data)
-                )
-            }, [setProjects]);
+  useEffect(() => {
+    axios
+      .get("https://portfolio-react-backend.herokuapp.com/portfolio")
+      .then((res) => setProjects(res.data))
+      .then(setLoading(false));
+  }, [setProjects]);
 
-            function expand (index) {
-                const modal = document.getElementById("modal");
-                const image = document.getElementById('image');
-                const description = document.getElementById("description");
+  function expand(index) {
+    const modal = document.getElementById("modal");
+    const image = document.getElementById("image");
+    const description = document.getElementById("description");
 
-                
-                switch (index) {
-                  case 0:
-                    modal.classList.add("open");
-                    image.src = projects[index].image;
-                    description.innerText = projects[index].description;
-                    break;
-                  case 1:
-                    modal.classList.add("open");
-                    image.src = projects[index].image;
-                    description.innerText = projects[index].description;
-                    break;
-                  case 2:
-                    modal.classList.add("open");
-                    image.src = projects[index].image;
-                    description.innerText = projects[index].description;
-                    break;
-                  case 3:
-                    modal.classList.add("open");
-                    image.src = projects[index].image;
-                    description.innerText = projects[index].description;
-                    break;
-                  case 4:
-                    modal.classList.add("open");
-                    image.src = projects[index].image;
-                    description.innerText = projects[index].description;
-                    break;
-                  case 5:
-                    modal.classList.add("open");
-                    image.src = projects[index].image;
-                    description.innerText = projects[index].description;
-                    break;
-                  default:
-                    break;
-                }
+    switch (index) {
+      case 0:
+        modal.classList.add("open");
+        image.src = projects[index].image;
+        description.innerText = projects[index].description;
+        break;
+      case 1:
+        modal.classList.add("open");
+        image.src = projects[index].image;
+        description.innerText = projects[index].description;
+        break;
+      case 2:
+        modal.classList.add("open");
+        image.src = projects[index].image;
+        description.innerText = projects[index].description;
+        break;
+      case 3:
+        modal.classList.add("open");
+        image.src = projects[index].image;
+        description.innerText = projects[index].description;
+        break;
+      case 4:
+        modal.classList.add("open");
+        image.src = projects[index].image;
+        description.innerText = projects[index].description;
+        break;
+      case 5:
+        modal.classList.add("open");
+        image.src = projects[index].image;
+        description.innerText = projects[index].description;
+        break;
+      default:
+        break;
+    }
+  }
 
-                 
-            }
+  function handleClick() {
+    const modal = document.getElementById("modal");
 
-            function handleClick(){
-                
-                  const modal = document.getElementById("modal");
+    if (modal.classList.contains("open")) {
+      modal.classList.remove("open");
+    }
+  }
 
-                  if (modal.classList.contains("open")) {
-                    modal.classList.remove("open");
-                  }
-                
-            }
-            
-    return (
-      <div className="projects-container">
-        <h1>Proyectos</h1>
-        <small>Click en un proyecto para expandir</small>
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: loadingImg,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  return (
+    <div className="projects-container">
+      <h1>Proyectos</h1>
+      <small>Click en un proyecto para expandir</small>
+      {loading ? (
+        <div>
+          <Lottie options={defaultOptions} width="200px" />
+        </div>
+      ) : (
         <div className="individual-cards-container">
           {projects.length > 0 &&
             projects.map((project, index) => (
@@ -101,14 +113,16 @@ function Portfolio(){
               </div>
             ))}
         </div>
-        <div className="modal" id="modal" onClick={handleClick}>
-          <img id="image" src="" alt="" className="full-card" />
-          <div className="project-modal-description">
-            <p className="modal-description" id="description"></p>
-          </div>
+      )}
+
+      <div className="modal" id="modal" onClick={handleClick}>
+        <img id="image" src="" alt="" className="full-card" />
+        <div className="project-modal-description">
+          <p className="modal-description" id="description"></p>
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Portfolio;

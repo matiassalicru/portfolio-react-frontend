@@ -35,10 +35,17 @@ a{
     border-radius: 10px;
     padding: 12px 17px;
     background-color: #7b7b7b50;
-    transition: all 0.4s;
-    color: #f4f4f490
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #f4f4f490;
+    box-shadow: 1px 1px 4px #d6bffc;
+
 }
 
 .btn:hover{
-    box-shadow: 3px 2px 6px #d6bffc;
+    box-shadow: 0px 0px 0px #d6bffc;
+}
+
+.btn-disabled{
+    box-shadow: 0px 0px 0px #d6bffc !important;
+
 }

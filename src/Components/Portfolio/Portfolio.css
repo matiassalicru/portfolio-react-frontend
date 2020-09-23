@@ -35,7 +35,8 @@
     border:1px solid #c4c4c450;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 4px 3px 4px #d6bffc50;
+    box-shadow: 2px 2px #d6bffc50;
+    
     transition: all 0.3s ease-in-out;
 }
 
@@ -66,7 +67,6 @@
 }
 
 .project-image:hover{
-    transform: scale(1.1);
     opacity: 0.5;
 }
 
@@ -91,7 +91,7 @@
 .modal{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
@@ -108,6 +108,7 @@
     flex-direction: row;
     width: 90%;
     align-items: center;
+    justify-content: center;
 }
 
 .open{

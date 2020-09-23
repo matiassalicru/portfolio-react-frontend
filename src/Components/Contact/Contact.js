@@ -13,21 +13,26 @@ function Contact () {
             
     return (
       <div className="contact-container">
-          <a
-            href="https://cafecito.app/mattdev"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <div className="contact-header">
-              <p className='btn'>Convirtiendo cafecitos en código</p>
-            </div>
-          </a>
-        <p className="creative-process">{contact.creative_process}</p>
+        <a
+          href="https://cafecito.app/mattdev"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div className="contact-header">
+            <p className="btn">Ayúdame a seguir codeando</p>
+          </div>
+        </a>
+        <p className="creative-process">
+          Creo soluciones web intuitivas, responsive con estéticas minimalistas,
+          centrándome en la funcionalidad y el diseño, me considero una persona
+          muy visual que se centra en los detalles y en el código limpio
+          brindando una agradable experiencia al usuario
+        </p>
         <div className="contact-final">
           <h2>Hablemos!</h2>
           <p>{contact.what_talk}</p>
           <h3>
-            <a href="mailto:mattiassalicru@gmail.com">{contact.email}</a>
+            <a href="mailto:mattiassalicru@gmail.com">mattiassalicru@gmail.com</a>
           </h3>
         </div>
         <div className="arrow-top" onClick={() => window.scrollTo(0, 0)}>
