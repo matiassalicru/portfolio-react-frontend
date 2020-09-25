@@ -55,6 +55,11 @@ function Portfolio() {
         image.src = projects[index].image;
         description.innerText = projects[index].description;
         break;
+      case 6:
+        modal.classList.add("open");
+        image.src = projects[index].image;
+        description.innerText = projects[index].description;
+        break;
       default:
         break;
     }

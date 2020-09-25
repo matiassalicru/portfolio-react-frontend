@@ -47,7 +47,7 @@ function About() {
         </ul>
 
         <div className="about-me">
-          Si querés saber más de mí acá te dejo mi cv hecho en HTML y CSS{" "}
+          Si querés saber más de mí acá te dejo mi cv hecho con HTML, CSS y JS{" "}
           <span>
             <a href={information.cv} target="_blank" rel="noopener noreferrer">
               (ver cv)
