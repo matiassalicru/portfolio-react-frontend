@@ -24,40 +24,46 @@ function Portfolio() {
     const image = document.getElementById("image");
     const description = document.getElementById("description");
 
+
     switch (index) {
       case 0:
         modal.classList.add("open");
-        image.src = projects[index].image;
+        image.src = projects[index].imageG;
         description.innerText = projects[index].description;
         break;
       case 1:
         modal.classList.add("open");
-        image.src = projects[index].image;
+        image.src = projects[index].imageG;
         description.innerText = projects[index].description;
         break;
       case 2:
         modal.classList.add("open");
-        image.src = projects[index].image;
+        image.src = projects[index].imageG;
         description.innerText = projects[index].description;
         break;
       case 3:
         modal.classList.add("open");
-        image.src = projects[index].image;
+        image.src = projects[index].imageG;
         description.innerText = projects[index].description;
         break;
       case 4:
         modal.classList.add("open");
-        image.src = projects[index].image;
+        image.src = projects[index].imageG;
         description.innerText = projects[index].description;
         break;
       case 5:
         modal.classList.add("open");
-        image.src = projects[index].image;
+        image.src = projects[index].imageG;
         description.innerText = projects[index].description;
         break;
       case 6:
         modal.classList.add("open");
-        image.src = projects[index].image;
+        image.src = projects[index].imageG;
+        description.innerText = projects[index].description;
+        break;
+      case 7:
+        modal.classList.add("open");
+        image.src = projects[index].imageG;
         description.innerText = projects[index].description;
         break;
       default:
