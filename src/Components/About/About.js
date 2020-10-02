@@ -35,7 +35,7 @@ function About() {
       </div>
 
       <div className="about-me-extra">
-        <p>Estas son algunas de las tecnologías que más utilizo actualmente:</p>
+        <p>Estas son algunas de las tecnologías que más utilizo actualmente, pero me adapto y estoy dispuesto a aprender nuevas:</p>
 
         <ul className="skills">
           {information.skills &&

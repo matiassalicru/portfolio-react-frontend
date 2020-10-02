@@ -3,7 +3,9 @@
 
 .App {
   text-align: center;
-  background-color: #222;
+  background-color: #252934;
+  /* background-color: #222; */
+scroll-behavior: smooth;
   font-family: 'Quicksand';
 }
 
@@ -30,8 +32,8 @@ a{
 .App-link {
   color: #61dafb;
 }
-
-.btn{
+/* 
+.btn1{
     border-radius: 10px;
     padding: 12px 17px;
     background-color: #7b7b7b50;
@@ -39,13 +41,62 @@ a{
     color: #f4f4f490;
     box-shadow: 1px 1px 4px #d6bffc;
 
+} */
+
+.btn {
+    float: left;
+    min-width: 150px;
+    max-width: none;
+    display: block;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 20px;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    border-color: #fff;
+        background: #7b7b7b50;
+    color: #ECEFF1;
 }
 
 .btn:hover{
-    box-shadow: 0px 0px 0px #d6bffc;
+      -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+    transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+    color: #ffffff;
+    background-color: #d6bffcd0;
+    -webkit-animation: anim-moema-1 0.5s forwards;
+    animation: anim-moema-1 0.3s forwards;
 }
+
+/* .btn:hover{
+    box-shadow: 0px 0px 0px #d6bffc;
+} */
 
 .btn-disabled{
     box-shadow: 0px 0px 0px #d6bffc !important;
+}
 
+@keyframes anim-moema-1{
+  60% {
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+    transform: scale3d(0.9, 0.9, 1);
+}
+85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+}
+
+@keyframes fadeIn{
+ 0% {
+    -webkit-transform: translateY(400px);
+    transform: translateY(400px);
+ }
+100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+} 
 }

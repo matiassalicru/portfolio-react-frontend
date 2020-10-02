@@ -19,6 +19,7 @@ html{
     -webkit-text-stroke: .5px #fff;
     color: transparent;
     font-family: Helvetica, sans-serif;
+    animation: anim-moema-1 0.8s;
 }
 
 
@@ -42,6 +43,8 @@ html{
     list-style: none;
     width: 40vw;
     margin: 0px 30px 0px 0px;
+    animation: fadeIn 0.8s ;
+    
 }
 
 .social>li>a{

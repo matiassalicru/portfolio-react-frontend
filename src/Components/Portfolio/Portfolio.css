@@ -10,10 +10,13 @@
 }
 
 .projects-container h1{
+    font-family: 'QuickSand';
     font-size: 3rem;
     text-align: center;
     color: #f0f0f0;
     letter-spacing: 0.5rem;
+    border-bottom: 2px solid #d6bffc50;
+    padding-bottom: 20px;
 }
 
 .individual-cards-container{
@@ -27,21 +30,25 @@
 .individual-card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    max-width: 20%;
-    margin: 1.5rem;
-    padding: 20px;
-    border:1px solid #c4c4c450;
-    border-radius: 20px;
+    max-width: 25%;
+    height: 300px;
+    margin: 1rem 0rem;
+    padding: 10px 20px;
+    border:1px solid #c8e5f3;
+    border-radius: 0px;
     cursor: pointer;
-    box-shadow: 2px 2px #d6bffc50;
-    
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s;
+
+  background-color: #252934;
+
 }
 
 .individual-card:hover{
-    box-shadow: 4px 3px 8px #d6bffc;
+    box-shadow: 4px 3px 8px 5px #d6bffc;
+    transform: scale(1.05);
+    z-index: 100;
 }
 
 .project-name{
@@ -57,6 +64,7 @@
     justify-content: center;
     border-radius: 16px;
     margin: 10px;
+    
 }
 
 .project-image{
@@ -64,6 +72,7 @@
     height: 100%;
     object-fit: cover;
     transition: all 0.4s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .project-image:hover{
@@ -76,9 +85,11 @@
 }
 
 .project-deploy{
+    display: none;
     font-style: italic;
     font-family: 'Quicksand', sans-serif;
     color: #b479b9;
+    font-size: .8rem;
 }
 
 
@@ -102,13 +113,17 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.45s ease-in-out;
+    z-index: 1000;
+
 }
 .project-modal-description{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%;
+    max-height: 100px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .open{
@@ -122,7 +137,7 @@
     width: 50vw;
     padding: 1.5rem;
     margin: auto 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     background-color: #f4f4f4;
     border-radius: 10px;
 }

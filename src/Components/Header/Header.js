@@ -16,9 +16,11 @@ function Header () {
     }
 
     return (
-      <div className="header-container">
+      <div className="header-container ">
         <Nav scroll={goto} />
-        <h1 className="header-title"> &lt;Matias/&gt; </h1>
+        <h1 className="header-title ">
+          &lt;Matias/&gt;
+        </h1>
         <ul className="social">
           <li>
             <a
