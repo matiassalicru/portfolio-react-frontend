@@ -22,20 +22,18 @@ function About() {
       <div className="about-me">
         Hola! Mi nombre es <span>Matias </span> tengo 24 años y soy un
         apasionado por la tecnología,{" "}
-        <span>poseo un año de experiencia en el desarrollo web</span> y en ese
+        <span>tengo un año de experiencia en el desarrollo web</span> y en ese
         tiempo hice algunos proyectos personales que me fueron divertidos de
         crear así como tambien <span>un proyecto freelance</span> para un
         emprendimiento, durante el transcurso de los mismos aprendí mucho acerca
-        de tecnologías como JavaScript, React, Node, Git y GitHub, siempre es
-        bien recibido el feedback y cualquier opinión que me ayude a llegar a mi
-        meta de ser desarrollador Full-Stack.
+        de tecnologías como JavaScript, React, Node, Git y GitHub, Firebase, Sass etc.
         <br /> <span>PD: Tambien me gustan los gatos y andar en bici</span>
         <br />
-        <br /> <i>Nunca parar de aprender</i>
+        <br /> <i>Lifelong learner</i>
       </div>
 
       <div className="about-me-extra">
-        <p>Estas son algunas de las tecnologías que más utilizo actualmente, pero me adapto y estoy dispuesto a aprender nuevas:</p>
+        <p>Estas son algunas de las tecnologías que más utilizo actualmente, pero me adapto bastante bien y estoy dispuesto a aprender nuevas:</p>
 
         <ul className="skills">
           {information.skills &&

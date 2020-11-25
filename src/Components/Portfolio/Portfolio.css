@@ -37,9 +37,11 @@
     margin: 1rem 0rem;
     padding: 10px 20px;
     border:1px solid #c8e5f3;
-    border-radius: 0px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.5s;
+    z-index: 5;
+    margin: 20px;
 
   background-color: #252934;
 
@@ -96,6 +98,10 @@
 
 .project-link:hover{
     color: #b479b9;
+}
+
+.project-link{
+    z-index: 99999;
 }
 
 

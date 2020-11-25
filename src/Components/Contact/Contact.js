@@ -19,7 +19,7 @@ function Contact () {
           target="_blank"
         >
           <div className="contact-header">
-            <p className="btn">Ayúdame a seguir codeando</p>
+            <button className="btn">Ayúdame a seguir codeando con un cafecito</button>
           </div>
         </a>
         <p className="creative-process">
@@ -32,7 +32,9 @@ function Contact () {
           <h2>Hablemos!</h2>
           <p>{contact.what_talk}</p>
           <h3>
-            <a href="mailto:mattiassalicru@gmail.com">mattiassalicru@gmail.com</a>
+            <a href="mailto:mattiassalicru@gmail.com">
+              mattiassalicru@gmail.com
+            </a>
           </h3>
         </div>
         <div className="arrow-top" onClick={() => window.scrollTo(0, 0)}>

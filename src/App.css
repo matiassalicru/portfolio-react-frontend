@@ -48,14 +48,19 @@ a{
     min-width: 150px;
     max-width: none;
     display: block;
-    padding: 12px 17px;
+    padding: 15px 20px;
+    font-size: 1em;
     border: none;
     border-radius: 20px;
-    -webkit-transition: background-color 0.3s, color 0.3s;
     transition: background-color 0.3s, color 0.3s;
     border-color: #fff;
-        background: #7b7b7b50;
+    background: #7b7b7b50;
     color: #ECEFF1;
+    cursor: pointer;
+}
+
+a {
+  color: inherit;
 }
 
 .btn:hover{
@@ -73,6 +78,7 @@ a{
 
 .btn-disabled{
     box-shadow: 0px 0px 0px #d6bffc !important;
+    cursor: crosshair;
 }
 
 @keyframes anim-moema-1{

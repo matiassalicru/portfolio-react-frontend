@@ -14,42 +14,49 @@ function Portfolio() {
       .then((res) => setProjects(res.data))
       .then(
         setTimeout(() => {
-          setLoading(false)
+          setLoading(false);
         }, 2000)
       );
   }, [setProjects]);
 
   function expand(index) {
-    const modal = document.getElementById("modal");
-    const image = document.getElementById("image");
-    const description = document.getElementById("description");
+    
 
     switch (index) {
       case 0:
-        modal.classList.add("open");
-        image.src = projects[index].imageG;
-        description.innerText = projects[index].description;
+        openModal(index);
+
         break;
       case 1:
-        modal.classList.add("open");
-        image.src = projects[index].imageG;
-        description.innerText = projects[index].description;
+        openModal(index);
+
         break;
       case 2:
-        modal.classList.add("open");
-        image.src = projects[index].imageG;
-        description.innerText = projects[index].description;
+        openModal(index);
+
         break;
       case 3:
-        modal.classList.add("open");
-        image.src = projects[index].imageG;
-        description.innerText = projects[index].description;
+        openModal(index);
+
         break;
-    
+      case 4:
+        openModal(index);
+        break;
+
       default:
         break;
     }
   }
+
+  const openModal = (index) => {
+    const modal = document.getElementById("modal");
+    const image = document.getElementById("image");
+    const description = document.getElementById("description");
+
+    modal.classList.add("open");
+    image.src = projects[index].imageG;
+    description.innerText = projects[index].description;
+  };
 
   function handleClick() {
     const modal = document.getElementById("modal");
@@ -94,7 +101,6 @@ function Portfolio() {
                     src={project.image}
                   ></img>
                 </div>
-
                 <p className="project-deploy">Deploy en: {project.deploy}</p>
 
                 <a
