@@ -11,41 +11,14 @@ function Portfolio() {
   useEffect(() => {
     axios
       .get("https://portfolio-react-backend.herokuapp.com/portfolio")
-      .then((res) => setProjects(res.data))
-      .then(
-        setTimeout(() => {
-          setLoading(false);
-        }, 2000)
-      );
+      .then((resp) => setProjects(resp.data))
+      .then(setLoading(false));
   }, [setProjects]);
 
   function expand(index) {
-    
-
-    switch (index) {
-      case 0:
-        openModal(index);
-
-        break;
-      case 1:
-        openModal(index);
-
-        break;
-      case 2:
-        openModal(index);
-
-        break;
-      case 3:
-        openModal(index);
-
-        break;
-      case 4:
-        openModal(index);
-        break;
-
-      default:
-        break;
-    }
+    if (index !== null) {
+      openModal(index);
+    } else return false;
   }
 
   const openModal = (index) => {
