@@ -1,0 +1,52 @@
+[debug] [2020-12-19T14:49:31.568Z] ----------------------------------------------------------------------
+[debug] [2020-12-19T14:49:31.570Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\matti\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-19T14:49:31.571Z] CLI Version:   9.0.1
+[debug] [2020-12-19T14:49:31.571Z] Platform:      win32
+[debug] [2020-12-19T14:49:31.571Z] Node Version:  v12.18.4
+[debug] [2020-12-19T14:49:31.572Z] Time:          Sat Dec 19 2020 11:49:31 GMT-0300 (GMT-03:00)
+[debug] [2020-12-19T14:49:31.572Z] ----------------------------------------------------------------------
+[debug] [2020-12-19T14:49:31.572Z] 
+[debug] [2020-12-19T14:49:31.578Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-19T14:49:31.579Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  H:\Programación\React js\PortfolioReact\frontendportfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using portfolio-matt. 
+[debug] [2020-12-19T14:49:37.172Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-matt  
+ 
+[debug] [2020-12-19T14:49:37.547Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Dec 2020 14:49:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-12-19T14:50:49.973Z] Error: EINVAL: invalid argument, mkdir 'H:\Programación\React js\PortfolioReact\frontendportfolio\<!-- The core Firebase JS SDK is always required and must be listed first -->'
+    at Object.mkdirSync (fs.js:921:3)
+    at Object.mkdirsSync (C:\Users\matti\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:22:9)
+    at Object.createFileSync (C:\Users\matti\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:31:11)
+    at Config.writeProjectFile (C:\Users\matti\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:155:8)
+    at C:\Users\matti\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:174:18
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
