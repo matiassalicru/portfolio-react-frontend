@@ -32,16 +32,6 @@ a{
 .App-link {
   color: #61dafb;
 }
-/* 
-.btn1{
-    border-radius: 10px;
-    padding: 12px 17px;
-    background-color: #7b7b7b50;
-    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    color: #f4f4f490;
-    box-shadow: 1px 1px 4px #d6bffc;
-
-} */
 
 .btn {
     float: left;
