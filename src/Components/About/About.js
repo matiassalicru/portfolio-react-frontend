@@ -21,19 +21,27 @@ function About() {
 
       <div className="about-me">
         Hola! Mi nombre es <span>Matias </span> tengo 24 años y soy un
-        apasionado por la tecnología,{" "}
+        apasionado por la tecnología,
         <span>tengo un año de experiencia en el desarrollo web</span> y en ese
         tiempo hice algunos proyectos personales que me fueron divertidos de
         crear así como tambien <span>un proyecto freelance</span> para un
         emprendimiento, durante el transcurso de los mismos aprendí mucho acerca
-        de tecnologías como JavaScript, React, Node, Git y GitHub, Firebase, Sass etc.
+        de tecnologías como JavaScript, React, Node, Git y GitHub, Firebase,
+        Sass etc.
+        <br />
+        <br /> Soy proactivo, me encanta codear, me gusta trabajar en equipo y
+        <br />
+        tengo muchas metas que alcanzar!
         <br /> <span>PD: Tambien me gustan los gatos y andar en bici</span>
         <br />
         <br /> <i>Lifelong learner</i>
       </div>
 
       <div className="about-me-extra">
-        <p>Estas son algunas de las tecnologías que más utilizo actualmente, pero me adapto bastante bien y estoy dispuesto a aprender nuevas:</p>
+        <p>
+          Estas son algunas de las tecnologías que más utilizo actualmente, pero
+          me adapto bastante bien y estoy dispuesto a aprender nuevas
+        </p>
 
         <ul className="skills">
           {information.skills &&
@@ -45,13 +53,20 @@ function About() {
         </ul>
 
         <div className="about-me">
-          Si querés saber más de mí acá te dejo mi cv hecho con HTML, CSS y JS{" "}
+          Si querés saber más de mí acá te dejo mi cv hecho con HTML, CSS y J
           <span>
             <a href={information.cv} target="_blank" rel="noopener noreferrer">
               (ver cv)
             </a>
           </span>
         </div>
+
+        <p className="creative-process">
+          Creo soluciones web intuitivas, responsive con estéticas minimalistas,
+          centrándome en la funcionalidad y el diseño, me considero una persona
+          muy visual que se centra en los detalles y en el código limpio
+          brindando una agradable experiencia al usuario
+        </p>
       </div>
 
       <div onClick={goto} className="arrow-desktop"></div>

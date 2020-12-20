@@ -22,12 +22,7 @@ function Contact () {
             <button className="btn">Ayúdame a seguir codeando con un cafecito</button>
           </div>
         </a>
-        <p className="creative-process">
-          Creo soluciones web intuitivas, responsive con estéticas minimalistas,
-          centrándome en la funcionalidad y el diseño, me considero una persona
-          muy visual que se centra en los detalles y en el código limpio
-          brindando una agradable experiencia al usuario
-        </p>
+        
         <div className="contact-final">
           <h2>Hablemos!</h2>
           <p>{contact.what_talk}</p>

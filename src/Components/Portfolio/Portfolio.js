@@ -76,14 +76,24 @@ function Portfolio() {
                 </div>
                 <p className="project-deploy">Deploy en: {project.deploy}</p>
 
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn"
-                  href={project.link}
-                >
-                  Visitar este proyecto
-                </a>
+                <div className="project_links">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                    href={project.link}
+                  >
+                    Visitar este proyecto
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                    href={project.repo}
+                  >
+                    Visitar repositorio
+                  </a>
+                </div>
               </div>
             ))}
         </div>

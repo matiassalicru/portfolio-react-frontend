@@ -57,6 +57,7 @@ a{
     background: #7b7b7b50;
     color: #ECEFF1;
     cursor: pointer;
+    box-shadow: 1px 1px 6px #c4c4c4;
 }
 
 a {
